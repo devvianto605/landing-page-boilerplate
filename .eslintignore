@@ -1,0 +1,9 @@
+*.json
+*.js
+*.cjs
+build
+node_modules
+coverage
+.yarnrc
+vite.config.ts
+bugong
