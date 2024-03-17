@@ -1,13 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable newline-per-chained-call */
 import { Center, Stack, Heading, Text, Grid, Image, Box, Flex, useToast } from '@chakra-ui/react';
 import { CustomInput, CustomTextarea, SmartForm, SubmitButton } from '@components';
 import React from 'react';
 import { z } from 'zod';
-import Vector2 from '@assets/svg/vector2.svg';
-import Circle1 from '@assets/svg/circle1.svg';
-import Circle2 from '@assets/svg/circle2.svg';
-import axios from 'Axios';
+// import axios from 'Axios';
 
 const contactFormSchema = z.object({
   detail: z.string().nonempty('All field must be filled'),
@@ -18,7 +13,7 @@ type ContactForm = z.infer<typeof contactFormSchema>;
 
 const ContactUs = () => {
   const toast = useToast();
-  const handleSendEmail = async (formData: ContactForm) => {
+  const handleSendEmail = async (/* formData: ContactForm*/) => {
     // const response = await axios.post('<API_ENDPOINT>', {
     //   detail: formData.detail,
     //   email: formData.email,
